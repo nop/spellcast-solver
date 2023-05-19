@@ -1,0 +1,20 @@
+[package]
+name = "spellcast-solver"
+version = "0.1.0"
+edition = "2021"
+authors = ["James Box"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+regex = "1"
+clap = { version = "4.2", features = ["derive", "wrap_help"] }
+lazy_static = "1"
+
+[lib]
+name = "spellcast_solver"
+path = "src/lib.rs"
+
+[[bin]]
+name = "spellcast-solver"
+path = "src/main.rs"
